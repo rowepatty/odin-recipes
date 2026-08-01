@@ -99,3 +99,76 @@ nav a:hover {
     line-height: 1.5;
     word-break: break-word;
 }
+
+section {
+    width: 45%;
+    max-width: 45%;
+    margin: 1rem 3rem;
+    padding: 1rem 3rem;
+    align-items: center;
+    background: beige;
+    border-style: dashed;
+    border-color: #CC9543;
+    border-radius: 1rem;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+section ul {
+    margin-left: 1rem;
+}
+
+section ul li {
+    padding: 0.5rem;
+}
+
+article {
+    width: 60%;
+    max-width: 60%;
+    margin: 1rem 3rem;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.step-text {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.step img {
+    flex: 0 0 40%;
+    width: 40%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    border: 0.125rem solid #CC9543;
+}
+
+.step p {
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 60rem) {
+    .step {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .step img {
+        flex: none;
+        width: 100%;
+        height: 40vh;
+    }
+}
