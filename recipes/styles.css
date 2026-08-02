@@ -55,22 +55,21 @@ nav a:hover {
 .picture-frame {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
     text-align: left;
     align-items: flex-start;
     justify-content: flex-start;
-    width: auto;
-    max-width: calc(100% - 4rem);
-    margin: 2rem auto;
+    width: 50%;
+    min-width: fit-content;
+    margin: 2rem 2rem 1rem;
     padding: 0 1rem;
     box-sizing: border-box;
 }
 
 .picture-frame img {
     float: none;
-    flex: 0 0 45%;
-    width: min(45%, 100%);
-    max-width: 50%;
+    flex: 1 0 45%;
+    width: max-content;
+    max-width: 100%;
     aspect-ratio: 1.5;
     padding: 1rem;
     background: linear-gradient(45deg, green, white, red);
@@ -101,8 +100,8 @@ nav a:hover {
 }
 
 section {
-    width: 45%;
-    max-width: 45%;
+    width: 50%;
+    min-width: fit-content;
     margin: 1rem 3rem;
     padding: 1rem 3rem;
     align-items: center;
@@ -125,9 +124,9 @@ section ul li {
 }
 
 article {
-    width: 60%;
-    max-width: 60%;
-    margin: 1rem 3rem;
+    width: 50%;
+    min-width: fit-content;
+    margin: 3rem 2rem 1rem;
     padding: 1rem;
     align-items: flex-start;
     justify-content: left;
@@ -135,7 +134,7 @@ article {
 
 .step {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
     margin-top: 1rem;
     margin-bottom: 3rem;
